@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: url('/static/lupa.gif') no-repeat center center fixed;
+    background-size: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 50px;
+}
+
+.container {
+    margin-top: 15;
+    background-color: rgba(200, 200, 200, 0.75);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+input {
+    padding: 12px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#resultado {
+    margin-top: 1.5rem;
+    font-weight: 500;
+    text-align: left;
+}
+
+#resultado p {
+    background: #e6fff0;
+    border-left: 4px solid #4CAF50;
+    padding: 10px;
+    margin: 0.5rem 0;
+    border-radius: 4px;
+    color: #333;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.aviso-responsabilidade {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 14px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    opacity: 0.95;
+  }
+  
+  .footer-criador {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(200, 200, 200, 0.75);
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    padding: 8px 0;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
+    z-index: 9998;
+  }
+  
